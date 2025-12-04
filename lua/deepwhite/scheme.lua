@@ -26,6 +26,8 @@ function M.get_groups(c)
         TabLine = { link = "Normal" },
         TabLineSel = { reverse = true },
 
+        WinBar = { link = "Normal" },
+
         WinSeparator = { fg = c.base0 },
 
         SignColumn = { link = "LineNr" },
@@ -69,9 +71,9 @@ function M.get_groups(c)
         Delimiter = { link = "Identifier" },
         Statement = { fg = c.base0, bg = c.light_orange }, -- Conditional Repeat Label Operator Keyword Exception
         Operator = { link = "Identifier" },
-        PreProc = { link = "Question" },             -- Include Define Macro PreCondit
-        Type = { fg = c.pink },                      -- StorageClass Structure Typedef
-        Special = { link = "SpecialKey" },           -- SpecialChar Tag Delimiter SpecialComment Debug
+        PreProc = { link = "Question" },                   -- Include Define Macro PreCondit
+        Type = { fg = c.pink },                            -- StorageClass Structure Typedef
+        Special = { link = "SpecialKey" },                 -- SpecialChar Tag Delimiter SpecialComment Debug
         Function = { link = "Identifier" },
         Underlined = { underline = true },
         Ignore = { fg = c.base7 },
@@ -307,13 +309,13 @@ function M.get_groups(c)
         MiniDiffOverDelete = { bg = c.light_red },
 
         -- mini.files
-        MiniFilesBorder = { link = "WinSeparator" }, -- border of regular windows.
+        MiniFilesBorder = { link = "WinSeparator" },       -- border of regular windows.
         MiniFilesBorderModified = { link = "DiffChange" }, -- border of windows showing modified buffer.
-        MiniFilesDirectory = { link = "SpecialKey" }, -- text and icon representing directory.
-        MiniFilesFile = { link = "Identifier" },     -- text representing file.
-        MiniFilesNormal = { link = "Normal" },       -- basic foreground/background highlighting.
-        MiniFilesTitle = { link = "Comment" },       -- title of regular windows.
-        MiniFilesTitleFocused = { link = "PreProc" }, -- title of focused window.
+        MiniFilesDirectory = { link = "SpecialKey" },      -- text and icon representing directory.
+        MiniFilesFile = { link = "Identifier" },           -- text representing file.
+        MiniFilesNormal = { link = "Normal" },             -- basic foreground/background highlighting.
+        MiniFilesTitle = { link = "Comment" },             -- title of regular windows.
+        MiniFilesTitleFocused = { link = "PreProc" },      -- title of focused window.
 
         -- mini.jump2d
         MiniJump2dSpot = { fg = c.red, bold = true },
