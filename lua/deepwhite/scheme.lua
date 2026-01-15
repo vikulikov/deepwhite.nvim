@@ -27,6 +27,7 @@ function M.get_groups(c)
         TabLineSel = { reverse = true },
 
         WinBar = { link = "Normal" },
+        WinBarNC = { link = "Normal" },
 
         WinSeparator = { fg = c.base0 },
 
