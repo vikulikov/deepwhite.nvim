@@ -312,9 +312,9 @@ function M.get_groups(c)
         -- codediff
         CodeDiffLineInsert = { bg = c.light_green },
         CodeDiffLineDelete = { bg = c.light_red },
-        CodeDiffCharInsert = { bg = c.green },
-        CodeDiffCharDelete = { bg = c.red },
-        CodeDiffFiller = { bg = c.pink },
+        CodeDiffCharInsert = { bg = c.light_green },
+        CodeDiffCharDelete = { bg = c.light_red },
+        CodeDiffFiller = { link = "Comment" },
         CodeDiffLineMove = { bg = c.light_orange },
         CodeDiffMoveTo = { bg = c.light_orange },
 
