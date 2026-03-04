@@ -309,6 +309,15 @@ function M.get_groups(c)
         MiniDiffOverContext = { bg = c.light_cyan },
         MiniDiffOverDelete = { bg = c.light_red },
 
+        -- codediff
+        CodeDiffLineInsert = { bg = c.light_green },
+        CodeDiffLineDelete = { bg = c.light_red },
+        CodeDiffCharInsert = { bg = c.green },
+        CodeDiffCharDelete = { bg = c.red },
+        CodeDiffFiller = { bg = c.pink },
+        CodeDiffLineMove = { bg = c.light_orange },
+        CodeDiffMoveTo = { bg = c.light_orange },
+
         -- mini.files
         MiniFilesBorder = { link = "WinSeparator" },       -- border of regular windows.
         MiniFilesBorderModified = { link = "DiffChange" }, -- border of windows showing modified buffer.
