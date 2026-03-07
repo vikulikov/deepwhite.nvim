@@ -61,9 +61,9 @@ function M.get_groups(c)
         ErrorMsg = { fg = c.base7, bg = c.red },
         WarningMsg = { fg = c.base7, bg = c.orange },
 
-        DiffAdd = { fg = c.green },
-        DiffChange = { fg = c.orange },
-        DiffDelete = { fg = c.red },
+        DiffAdd = { fg = c.green, bg = c.light_green },
+        DiffChange = { fg = c.orange, bg = c.light_orange },
+        DiffDelete = { fg = c.red, bg = c.light_red },
 
         Comment = { fg = c.base3 },
         Constant = { fg = c.base0, bg = c.light_blue }, -- String Character Number Boolean Float
