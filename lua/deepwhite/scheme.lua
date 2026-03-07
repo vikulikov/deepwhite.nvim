@@ -312,12 +312,12 @@ function M.get_groups(c)
         -- codediff
         CodeDiffLineInsert = { bg = c.light_green },
         CodeDiffLineDelete = { bg = c.light_red },
-        -- char-level highlights are 0.92x brightness of line-level (light theme factor)
-        CodeDiffCharInsert = { bg = "#C3E6C3" },
-        CodeDiffCharDelete = { bg = "#E6C3C3" },
+        -- char-level: same brightness (98%) but higher saturation (20% vs 15%) to stay readable
+        CodeDiffCharInsert = { bg = "#C8FAC8" },
+        CodeDiffCharDelete = { bg = "#FAC8C8" },
         CodeDiffFiller = { link = "Comment" },
         CodeDiffLineMove = { bg = c.light_orange },
-        CodeDiffCharMove = { bg = "#E6CFB8" },
+        CodeDiffCharMove = { bg = "#FAD9B4" },
         CodeDiffMoveFrom = { fg = c.blue },
         CodeDiffMoveTo = { fg = c.blue },
 
