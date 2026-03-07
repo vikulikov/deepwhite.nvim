@@ -312,11 +312,36 @@ function M.get_groups(c)
         -- codediff
         CodeDiffLineInsert = { bg = c.light_green },
         CodeDiffLineDelete = { bg = c.light_red },
-        CodeDiffCharInsert = { bg = c.light_green },
-        CodeDiffCharDelete = { bg = c.light_red },
+        -- char-level highlights are 0.92x brightness of line-level (light theme factor)
+        CodeDiffCharInsert = { bg = "#C3E6C3" },
+        CodeDiffCharDelete = { bg = "#E6C3C3" },
         CodeDiffFiller = { link = "Comment" },
         CodeDiffLineMove = { bg = c.light_orange },
-        CodeDiffMoveTo = { bg = c.light_orange },
+        CodeDiffCharMove = { bg = "#E6CFB8" },
+        CodeDiffMoveFrom = { fg = c.blue },
+        CodeDiffMoveTo = { fg = c.blue },
+
+        -- explorer
+        ExplorerDirectorySmall = { link = "Comment" },
+        CodeDiffExplorerSelected = { link = "Visual" },
+        NeoTreeIndentMarker = { link = "Comment" },
+
+        -- git status in explorer
+        CodeDiffStatusAdded = { link = "DiagnosticOk" },
+        CodeDiffStatusModified = { link = "DiagnosticWarn" },
+        CodeDiffStatusDeleted = { link = "DiagnosticError" },
+        CodeDiffStatusRenamed = { link = "DiagnosticInfo" },
+        CodeDiffStatusUntracked = { link = "DiagnosticInfo" },
+        CodeDiffStatusConflict = { link = "DiagnosticError" },
+
+        -- conflict signs
+        CodeDiffConflictSign = { fg = c.orange },
+        CodeDiffConflictSignResolved = { fg = c.base3 },
+        CodeDiffConflictSignAccepted = { fg = c.green },
+        CodeDiffConflictSignRejected = { fg = c.red },
+
+        -- history
+        CodeDiffHistoryTitle = { link = "Title" },
 
         -- mini.files
         MiniFilesBorder = { link = "WinSeparator" },       -- border of regular windows.
